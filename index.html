@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>EMPLOYEE FORM</title>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+      <div class="container">
+         <h2>EMPLOYEE FORM USING JPDB API</h2>
+         <form id="empForm" method="get">
+            <div class="form-group">
+               <label for="empid">Employee ID:</label> 
+               <input type="text" class="form-control" name="empid" id="empid" placeholder="Enter Employee ID" onchange="getEmp()">
+            </div>
+            <div class="form-group">
+               <label for="empName">Employee Name:</label>
+               <input type="text" class="form-control" id="empName" placeholder="Enter Employee Name" name="empName">
+            </div>
+            <div class="form-group">
+               <label for="salary">Salary:</label>
+               <input type="text" class="form-control" id="empsal" placeholder="Enter Employee Salary" name="salary">
+            </div>
+            <div class="form-group">
+               <label for="hra">hra:</label>
+               <input type="text" class="form-control" id="hra" placeholder="Enter Employee hra" name="hra">
+            </div>
+            <div class="form-group">
+               <label for="da">DA:</label>
+               <input type="text" class="form-control" id="da" placeholder="Enter Employee da" name="da">
+            </div>
+            <div class="form-group">
+               <label for="deduct">Deduction:</label>
+               <input type="text" class="form-control" id="deduct" placeholder="Enter Employee deduction" name="deduction">
+            </div>
+            
+            <input type="button" class="btn btn-primary" id="save" value="Save" onclick="saveData();">
+            <input type="button" class="btn btn-primary" id="change" value="Change" onclick="changeData();">
+            <input type="button" class="btn btn-primary" id="reset" value="Reset" onclick="resetForm();">
+        </form>
+     </div>
+
+
+     <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+     <script src="index.js"></script>
+    
+</body>
+</html>
